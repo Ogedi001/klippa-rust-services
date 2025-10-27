@@ -55,7 +55,7 @@ rustup show
 
 ## 📁 Project Structure
 
-```
+```text
 klippa-rust/
 ├── 🏠 Root Configuration
 │   ├── Cargo.toml              # Workspace manifest
