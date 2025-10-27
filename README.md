@@ -232,11 +232,6 @@ make run-all     # Start all services
 # Build optimized binaries
 make build-release
 
-# Build Docker images
-docker build -f ops/Dockerfile.booking -t klippa/booking:latest .
-
-# Deploy to Kubernetes
-kubectl apply -f ops/k8s/
 ```
 
 ---
@@ -338,17 +333,15 @@ We welcome contributions! Please see our contributing guidelines:
 | **Architecture Decisions** | Technical decision records    | `docs/adr/`            |
 | **API Reference**          | Service API documentation     | `docs/api/`            |
 | **Runbooks**               | Operational procedures        | `docs/runbooks/`       |
-| **Development Guide**      | Development workflow          | `docs/development.md`  |
 
 ---
 
 ## 🏢 Related Projects
 
-| Repository                | Language   | Purpose                          |
-| ------------------------- | ---------- | -------------------------------- |
-| **`klippa-ts-services`**  | TypeScript | Auth, CRM, Notification services |
-| **`klippa-business-ops`** | TypeScript | Business logic & integrations    |
-| **`klippa-infra`**        | YAML/Helm  | Kubernetes infrastructure        |
+| Repository                | Language   | Purpose                                          |
+| ------------------------- | ---------- | ------------------------------------------------ |
+| **`klippa-ts-services`**  | TypeScript | Auth, CRM, Notification services, Business logic |
+
 
 ---
 
