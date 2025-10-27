@@ -51,17 +51,7 @@ cd klippa-rust
 rustup show
 
 # 3. Start development environment
-make dev
-```
-````
 
-This will:
-
-- Start all dependencies (PostgreSQL, Redis, Kafka)
-- Build all services and libraries
-- Launch the development environment
-
----
 
 ## 📁 Project Structure
 
@@ -111,7 +101,6 @@ klippa-rust/
     └── smoke/                  # Health checks
 ```
 
----
 
 ## ⚙️ Configuration Management
 
@@ -145,29 +134,6 @@ DATABASE_URL=postgres://user:pass@localhost:5432/klippa_dev
 REDIS_URL=redis://localhost:6379
 JWT_SECRET=your_jwt_secret_here
 
-# 3. Start services - config is automatically loaded
-make run-booking
-```
-
-### Using Configuration in Services:
-
-```rust
-use config::AppConfig;
-
-#[tokio::main]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // Configuration is automatically loaded
-    let config = AppConfig::new()?;
-
-    println!("Starting on port: {}", config.port);
-    println!("Database: {}", config.database_url());
-
-    // Your service logic here
-    Ok(())
-}
-```
-
----
 
 ## 🛠️ Development Workflow
 
@@ -398,6 +364,3 @@ _For internal use only._
 >
 > _"If it compiles, it works."_
 
-```
-
-```
