@@ -1,0 +1,10 @@
+[package]
+name = "chat"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+common = { path = "../../libs/common" }
+config = { path = "../../libs/config" }
+tokio.workspace = true     
+serde.workspace = true     

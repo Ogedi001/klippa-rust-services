@@ -1,0 +1,6 @@
+[package]
+name = "messaging"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
