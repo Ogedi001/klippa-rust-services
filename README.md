@@ -1,11 +1,9 @@
-````markdown
 # 🦀 Klippa Rust Microservices Platform
 
 A high-performance, type-safe microservices platform built in Rust, powering Klippa's core booking, payment, and real-time communication services.
 
 > **Part of the Klippa SaaS Ecosystem** – This workspace contains Rust-based services that handle performance-critical operations alongside our TypeScript/Node.js and Go services.
 
----
 
 ## 🏗️ Architecture Overview
 
@@ -33,7 +31,6 @@ This repository follows a **monorepo workspace pattern** where each service and 
 | **`domain`**    | Shared domain models and business logic       |
 | **`error`**     | Unified error handling framework              |
 
----
 
 ## 🚀 Quick Start
 
